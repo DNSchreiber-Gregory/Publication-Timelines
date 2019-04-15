@@ -290,7 +290,7 @@ data Publication_Timeline;
 			else if TA='Med Teach Medic' then JT='Medical teacher';
 			else if TA='Perspect Med Ed' then JT='Perspectives on medical education';
 			else if TA='Teach Learn Med' then JT='Teaching and learning in medicine';
-			else JT='';
+			else JT='TA';
 	LastSubmitted = max(PHST_Received, PHST_Revised_1, PHST_Revised_2, PHST_Revised_3, PHST_Revised_4, PHST_Revised_5); format LastSubmitted date10.; 
 	length Days_Received_To_Revised1 5.;
 		if PHST_Revised_1=. then Days_Received_To_Revised1=.;
